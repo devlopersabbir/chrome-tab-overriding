@@ -18,14 +18,23 @@ import {
   AiOutlinePlayCircle,
 } from "react-icons/ai";
 import Drawers from "./components/Drawer";
+import moment from "moment";
 
 const App = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const [isShow, setIsShow] = useState<boolean>(false);
   const [isEyeOpen, setIsEyeOpen] = useState<boolean>(false);
+
   return (
     <>
       <Flex
+        bgImg={
+          "https://source.unsplash.com/random/count=1&query=moon&fit=crop&w=1920"
+        }
+        // opacity="0.7"
+        bgPos="center"
+        bgSize="cover"
+        bgRepeat="no-repeat"
         w="full"
         h="100vh"
         pos="relative"
@@ -33,8 +42,7 @@ const App = () => {
         justifyContent="center"
         alignItems="center"
         flexDir="column"
-        // bg="gray.800"
-        bg="#1a202c33"
+        bgColor="#1a202c70"
       >
         {/* for drawer */}
         <Flex
@@ -64,7 +72,7 @@ const App = () => {
           ) : null}
         </Flex>
         <VStack color="white">
-          <Heading>20:30</Heading>
+          <Heading>{moment().format("LT")}</Heading>
           <Heading>Write something fun</Heading>
           <Heading>Good Afternoon</Heading>
         </VStack>

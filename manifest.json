@@ -18,10 +18,6 @@
     "256": "icon.png",
     "48": "icon.png"
   },
-  "background": {
-    "service_worker": "src/background/background.ts"
-  },
-
   "chrome_url_overrides": {
     "newtab": "index.html"
   }

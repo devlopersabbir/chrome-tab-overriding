@@ -1,11 +1,10 @@
 {
-  "name": "Extension Name",
-  "description": "Extension description with only 132 word",
+  "name": "Tab Overrides | A Beautiful New Tab",
+  "description": "Google Chrome Tab Override will give you a awesome beautiful new tab",
   "version": "0.0.1",
   "manifest_version": 3,
   "action": {
-    "default_title": "default title",
-    "default_popup": "index.html",
+    "default_title": "Tab Overrides",
     "default_icon": {
       "16": "icon.png",
       "24": "icon.png",
@@ -28,5 +27,7 @@
       "matches": ["<all_urls>"]
     }
   ],
-  "options_page": "src/options/index.html"
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  }
 }

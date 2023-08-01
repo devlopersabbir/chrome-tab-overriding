@@ -21,12 +21,7 @@
   "background": {
     "service_worker": "src/background/background.ts"
   },
-  "content_scripts": [
-    {
-      "js": ["src/content/content.ts"],
-      "matches": ["<all_urls>"]
-    }
-  ],
+
   "chrome_url_overrides": {
     "newtab": "index.html"
   }

@@ -3,6 +3,7 @@ import { LuChrome } from "react-icons/lu";
 import Layout from "../components/Layout";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
+import { Autoplay } from "swiper/modules";
 
 const Home = () => {
   const { colorMode } = useColorMode();
@@ -63,7 +64,12 @@ const Home = () => {
 
             <Swiper
               loop
-              autoplay={{ delay: 1000 }}
+              centeredSlides={true}
+              autoplay={{
+                delay: 1000,
+                disableOnInteraction: false,
+              }}
+              modules={[Autoplay]}
               style={{ width: "100%", height: "100%" }}
             >
               <SwiperSlide>

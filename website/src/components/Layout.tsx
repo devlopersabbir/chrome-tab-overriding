@@ -13,6 +13,7 @@ const Layout = ({ children }: ILayoutProps) => {
       mx="auto"
       w="full"
       h="auto"
+      py={[1, 2, 3, 10]}
     >
       {children}
     </Container>

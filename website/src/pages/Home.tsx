@@ -1,4 +1,3 @@
-import React from "react";
 import { Button, Flex, Heading, Text } from "@chakra-ui/react";
 import { LuChrome } from "react-icons/lu";
 import Layout from "../components/Layout";
@@ -6,7 +5,13 @@ import Layout from "../components/Layout";
 const Home = () => {
   return (
     <Layout>
-      <Flex w="full" flex={6}>
+      <Flex
+        w="full"
+        flex={6}
+        flexDir={["column", "column", "row"]}
+        align="center"
+        justify="center"
+      >
         <Flex
           px={[2, 4, 36]}
           flex={2}

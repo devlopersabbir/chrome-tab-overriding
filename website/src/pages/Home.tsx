@@ -1,16 +1,40 @@
 import React from "react";
-import { Flex, Heading } from "@chakra-ui/react";
+import { Button, Flex, Heading, Text } from "@chakra-ui/react";
+import { LuChrome } from "react-icons/lu";
+import Layout from "../components/Layout";
 
 const Home = () => {
   return (
-    <Flex bg="gray.500" w="full" flex={6}>
-      <Flex flex={2} bg="blue.400" w="full">
-        <Heading>hello left</Heading>
+    <Layout>
+      <Flex w="full" flex={6}>
+        <Flex
+          px={[2, 4, 36]}
+          flex={2}
+          flexDir="column"
+          justify="center"
+          align="center"
+        >
+          <Text fontSize="lg" fontWeight="normal" textAlign="center">
+            A beautiful, customisable New Tab page for Chrome, and Edge.
+          </Text>
+          <Text fontSize="lg" fontWeight="normal" textAlign="center">
+            <strong>100% free.</strong> No subscriptions. No ads.
+          </Text>
+          <Button
+            colorScheme="linkedin"
+            rounded="full"
+            px="3"
+            py={2}
+            leftIcon={<LuChrome />}
+          >
+            Add to Chrome
+          </Button>
+        </Flex>
+        <Flex flex={4} w="full">
+          <Heading>Hello right</Heading>
+        </Flex>
       </Flex>
-      <Flex flex={4} bg="gray.300" w="full">
-        <Heading>Hello right</Heading>
-      </Flex>
-    </Flex>
+    </Layout>
   );
 };
 

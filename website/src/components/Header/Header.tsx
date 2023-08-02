@@ -11,18 +11,18 @@ import { LuTwitter } from "react-icons/lu";
 
 const Header = () => {
   return (
-    <Container maxW="container.sm" m="auto">
+    <Container maxW="container.sm" m="auto" py={4}>
       <Stack flexDir="row" gap={5} alignItems="center">
-        <Heading as={Link} to="/">
+        <Heading as={Link} to="/" mr={3}>
           LOGO
         </Heading>
-        <Text as={Link} to="/" fontSize="2xl" fontWeight="semibold">
+        <Text as={Link} to="/" fontSize="xl" fontWeight="bold">
           Home
         </Text>
-        <Text as={Link} to="/updates" fontSize="2xl" fontWeight="semibold">
+        <Text as={Link} to="/updates" fontSize="xl" fontWeight="bold">
           Updates
         </Text>
-        <Text as={Link} to="/Supports" fontSize="2xl" fontWeight="semibold">
+        <Text as={Link} to="/Supports" fontSize="xl" fontWeight="bold">
           Supports
         </Text>
         <IconButton

@@ -67,14 +67,19 @@ const App = () => {
                 fontSize="2xl"
                 as={isEyeOpen ? AiOutlineEyeInvisible : AiOutlineEye}
               />
-              <Icon color="white" fontSize="2xl" as={AiOutlineFullscreenExit} />
+              <Icon
+                onClick={() => document.documentElement.requestFullscreen()}
+                color="white"
+                fontSize="2xl"
+                as={AiOutlineFullscreenExit}
+              />
             </HStack>
           ) : null}
         </Flex>
         <VStack color="white">
-          <Heading>{moment().format("LT")}</Heading>
-          <Heading>Write something fun</Heading>
-          <Heading>Good Afternoon</Heading>
+          <Heading fontSize="8xl">{moment().format("LT")}</Heading>
+          <Heading fontSize="4xl">Good Afternoon</Heading>
+          <Heading fontSize="4xl">Write something fun</Heading>
         </VStack>
         {/* bottom bar */}
         <Flex
@@ -87,9 +92,24 @@ const App = () => {
           w="full"
           m="auto"
         >
-          <Icon fontSize="md" cursor="pointer" as={AiOutlineLeft} />
-          <Icon fontSize="md" cursor="pointer" as={AiOutlinePlayCircle} />
-          <Icon fontSize="md" cursor="pointer" as={AiOutlineRight} />
+          <Icon
+            fontSize="md"
+            color="white"
+            cursor="pointer"
+            as={AiOutlineLeft}
+          />
+          <Icon
+            fontSize="md"
+            color="white"
+            cursor="pointer"
+            as={AiOutlinePlayCircle}
+          />
+          <Icon
+            fontSize="md"
+            color="white"
+            cursor="pointer"
+            as={AiOutlineRight}
+          />
         </Flex>
         {/* photo details */}
         <Flex
@@ -101,7 +121,9 @@ const App = () => {
           bottom={4}
           left={3}
         >
-          <Text>Photo, Vadim Sherbakov, Unsplash</Text>
+          <Text fontSize="lg" color="white">
+            Photo, Vadim Sherbakov, Unsplash
+          </Text>
         </Flex>
       </Flex>
       <Drawers isOpen={isOpen} onClose={onClose} />

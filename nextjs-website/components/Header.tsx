@@ -1,6 +1,5 @@
 import Logo from "./Logo";
 import Link from 'next/link'
-import { Button } from "./ui/button";
 import { TwitterIcon } from "lucide-react";
 
 export default function Header() {

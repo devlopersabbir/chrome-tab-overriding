@@ -1,3 +1,5 @@
+"use client"
+import React from 'react';
 import { Separator } from "@/components/ui/separator"
 
 const Supports = () => {
@@ -11,7 +13,6 @@ const Supports = () => {
       </section>
     </>
   )
-
 }
 
 export default Supports

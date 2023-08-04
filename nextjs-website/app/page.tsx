@@ -2,7 +2,7 @@ import HeadingWithIcon from "@/components/HeadingWithIcon";
 import Slider from "@/components/Slider";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
-import { BadgePlus, Calendar, ChromeIcon, GiftIcon, ImageIcon, LanguagesIcon, SettingsIcon } from 'lucide-react';
+import { Calendar, ChromeIcon, GiftIcon, ImageIcon, LanguagesIcon, SettingsIcon } from 'lucide-react';
 
 export default function Home() {
   return (

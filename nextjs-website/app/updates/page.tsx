@@ -1,4 +1,5 @@
-import Footer from '@/components/Footer'
+"use client"
+
 import { Separator } from '@/components/ui/separator'
 import React from 'react'
 

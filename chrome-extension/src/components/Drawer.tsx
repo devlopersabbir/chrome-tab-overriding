@@ -4,7 +4,10 @@ import {
   DrawerContent,
   DrawerOverlay,
   Flex,
+  Text,
   Heading,
+  Select,
+  VStack,
 } from "@chakra-ui/react";
 import "./scroll.css";
 
@@ -20,7 +23,7 @@ const Drawers = ({ isOpen, onClose }: IDrawersProps) => {
       <DrawerContent
         borderTopEndRadius="2xl"
         borderBottomEndRadius="2xl"
-        bg="gray.600"
+        bg="white"
         shadow="xl"
       >
         <DrawerBody
@@ -30,11 +33,21 @@ const Drawers = ({ isOpen, onClose }: IDrawersProps) => {
           h="full"
         >
           <Flex flexDir="column" justify="flex-start">
-            {[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16].map(
-              () => (
-                <Heading>LOGO</Heading>
-              )
-            )}
+            <Flex justify="center" my={7}>
+              <Heading textAlign="center" >LOGO</Heading>
+            </Flex>
+            <VStack w="full" align="flex-start" >
+              <Heading fontSize="lg" fontWeight="semibold">Backgound</Heading>
+              <Select bg="blackAlpha.200" border="none" outline="none" rounded="md">
+                <option value="solid_color">Solid Color</option>
+                <option value="solid_color">Color Gradient</option>
+                <option value="solid_color">Upload Image</option>
+                <option value="solid_color">Solid Color</option>
+              </Select>
+            </VStack>
+            <Flex bg="blackAlpha.200" w="full" h="full" p={4}>
+              <Text fontSize="2xl" fontWeight="semibold">Color Gradient</Text>
+            </Flex>
           </Flex>
         </DrawerBody>
       </DrawerContent>

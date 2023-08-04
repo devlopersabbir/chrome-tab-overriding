@@ -11,8 +11,8 @@ export default function Header() {
       </Link>
       <nav className='flex items-center space-x-4'>
         <NavItem href='/' text="Home" />
-        <NavItem href='/' text="Updates" />
-        <NavItem href='/' text="Support" />
+        <NavItem href='/updates' text="Updates" />
+        <NavItem href='/supports' text="Support" />
         <TwitterIcon className="h-7 w-7" />
       </nav>
     </header>

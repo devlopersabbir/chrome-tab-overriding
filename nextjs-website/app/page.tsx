@@ -2,7 +2,7 @@ import HeadingWithIcon from "@/components/HeadingWithIcon";
 import Slider from "@/components/Slider";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
-import { BadgePlus, Calendar, ChromeIcon, GiftIcon, ImageIcon, LanguagesIcon, SettingsIcon } from 'lucide-react'
+import { BadgePlus, Calendar, ChromeIcon, GiftIcon, ImageIcon, LanguagesIcon, SettingsIcon } from 'lucide-react';
 
 export default function Home() {
   return (
@@ -97,27 +97,7 @@ export default function Home() {
             Tabliss greets you in your language. Thanks to the wonderful community, the Tabliss dashboard has been translated to over 40 languages.
           </p>
         </div>
-
         <Separator />
-
-        <div className="pb-16 space-y-6">
-          <h2 className="text-2xl font-bold text-center">Add Tabliss to your browser</h2>
-
-          <div className="flex items-center justify-evenly gap-3">
-            <Button size='lg' className="bg-orange-600 text-white hover:bg-orange-600/90 rounded-full w-full">
-              <BadgePlus className="h-6 w-6 mr-2" />
-              Firefox
-            </Button>
-            <Button size='lg' className="bg-green-600 text-white hover:bg-green-600/90 rounded-full w-full">
-              <BadgePlus className="h-6 w-6 mr-2" />
-              Chrome
-            </Button>
-            <Button size='lg' className="bg-blue-600 text-white hover:bg-blue-600/90 rounded-full w-full">
-              <BadgePlus className="h-6 w-6 mr-2" />
-              Micosoft Edge
-            </Button>
-          </div>
-        </div>
       </section>
     </>
   )
